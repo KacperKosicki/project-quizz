@@ -3,38 +3,125 @@
   <head>
     <meta charset="utf-8">
     <title>Party Time by Kosa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.0.0/css/all.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <nav class="navigation">
         <ul>
-            <li><a href="#zasady">ZASADY</a></li>
-            <li><a href="author.html">O AUTORZE</a></li>
-            <li><a href="teams.html">DRUZYNY</a></li>
+            <li><a href="#" onclick="showChallenges(event)">WYZWANIA</a></li>
+            <li><a href="#" onclick="addGameRules(event)">ZASADY</a></li>
+            <li><a href="#" onclick="generateRandomNumber()">LOSOWANIE</a></li>
         </ul>
     </nav>
+    <section class="challenge-section">
+        <div class="challenge-box" data-index="0">#1
+          <span class="challenge-text"></span>
+        </div>
+        <div class="challenge-box" data-index="1">#2
+          <span class="challenge-text"></span>
+        </div>
+        <div class="challenge-box" data-index="2">#3
+            <span class="challenge-text"></span>
+          </div>
+          <div class="challenge-box" data-index="4">#4
+            <span class="challenge-text"></span>
+          </div>
+          <div class="challenge-box" data-index="5">#5
+            <span class="challenge-text"></span>
+          </div>
+          <div class="challenge-box" data-index="6">#6
+            <span class="challenge-text"></span>
+          </div>
+          <div class="challenge-box" data-index="7">#7
+            <span class="challenge-text"></span>
+          </div>
+          <div class="challenge-box" data-index="8">#8
+            <span class="challenge-text"></span>
+          </div>
+          <div class="challenge-box" data-index="9">#9
+            <span class="challenge-text"></span>
+          </div>
+          <div class="challenge-box" data-index="10">#10
+            <span class="challenge-text"></span>
+          </div>
+          <div class="challenge-box" data-index="11">#11
+            <span class="challenge-text"></span>
+          </div>
+          <div class="challenge-box" data-index="12">#12
+            <span class="challenge-text"></span>
+          </div>
+          <div class="challenge-box" data-index="13">#13
+            <span class="challenge-text"></span>
+          </div>
+          <div class="challenge-box" data-index="14">#14
+            <span class="challenge-text"></span>
+          </div>
+          <div class="challenge-box" data-index="15">#15
+            <span class="challenge-text"></span>
+          </div>
+        <!-- Dodaj pozostałe pudełka -->
+      </section>
     <div class="add-team-section">
         <button class="add-team-btn" type="button" onclick="addTeam()">Dodaj drużynę</button>
         <ul id="team-list" class="team-list"></ul>
     </div>
+    <h2 class="films">FILMY <i class="fa-solid fa-video"></i></h2>
     <div class="category">
-      <h2>FILMY</h2>
-      <div class="level-buttons">
-        <button class="level-btn easy" type="button" onclick="handleButtonClick(this)">Poziom 1
+        <div class="buttons-container">
+            <div class="ask-buttons">
+                <button class="ask-btn easy" type="button" onclick="handleButtonClick(this)">Pytanie 1 <i class="fa-solid fa-question"></i>
+                    <span class="points">1 pkt</span>
+                </button>
+                <button class="ask-btn basic" type="button" onclick="handleButtonClick(this)">Poziom 2 <i class="fa-solid fa-question"></i>
+                    <span class="points">2 pkt</span>
+                </button>
+                <button class="ask-btn moderate" type="button" onclick="handleButtonClick(this)">Poziom 3 <i class="fa-solid fa-question"></i>
+                    <span class="points">3 pkt</span>
+                </button>
+                <button class="ask-btn advanced" type="button" onclick="handleButtonClick(this)">Poziom 4 <i class="fa-solid fa-question"></i>
+                    <span class="points">4 pkt</span>
+                </button>
+                <button class="ask-btn expert" type="button" onclick="handleButtonClick(this)">Poziom 5 <i class="fa-solid fa-question"></i>
+                    <span class="points">5 pkt</span>
+                </button>
+            </div>
+      </div>
+      <div class="image-buttons">
+        <button class="image-btn easy" type="button" onclick="handleButtonClick(this)">Zdjęcie 1 <i class="fa-solid fa-image"></i>
             <span class="points">1 pkt</span>
         </button>
-        <button class="level-btn basic" type="button" onclick="handleButtonClick(this)">Poziom 2
+        <button class="image-btn basic" type="button" onclick="handleButtonClick(this)">Zdjęcie 2 <i class="fa-solid fa-image"></i>
             <span class="points">2 pkt</span>
         </button>
-        <button class="level-btn moderate" type="button" onclick="handleButtonClick(this)">Poziom 3
+        <button class="image-btn moderate" type="button" onclick="handleButtonClick(this)">Zdjęcie 3 <i class="fa-solid fa-image"></i>
             <span class="points">3 pkt</span>
         </button>
-        <button class="level-btn advanced" type="button" onclick="handleButtonClick(this)">Poziom 4
+        <button class="image-btn advanced" type="button" onclick="handleButtonClick(this)">Zdjęcie 4 <i class="fa-solid fa-image"></i>
             <span class="points">4 pkt</span>
         </button>
-        <button class="level-btn expert" type="button" onclick="handleButtonClick(this)">Poziom 5
+        <button class="image-btn expert" type="button" onclick="handleButtonClick(this)">Zdjęcie 5 <i class="fa-solid fa-image"></i>
+            <span class="points">5 pkt</span>
+        </button>
+      </div>
+      <div class="voice-buttons">
+        <button class="voice-btn easy" type="button" onclick="handleButtonClick(this)">Dźwięk 1 <i class="fa-solid fa-microphone-lines"></i>
+            <span class="points">1 pkt</span>
+        </button>
+        <button class="voice-btn basic" type="button" onclick="handleButtonClick(this)">Dźwięk 2 <i class="fa-solid fa-microphone-lines"></i>
+            <span class="points">2 pkt</span>
+        </button>
+        <button class="voice-btn moderate" type="button" onclick="handleButtonClick(this)">Dźwięk 3 <i class="fa-solid fa-microphone-lines"></i>
+            <span class="points">3 pkt</span>
+        </button>
+        <button class="voice-btn advanced" type="button" onclick="handleButtonClick(this)">Dźwięk 4 <i class="fa-solid fa-microphone-lines"></i>
+            <span class="points">4 pkt</span>
+        </button>
+        <button class="voice-btn expert" type="button" onclick="handleButtonClick(this)">Dźwięk 5 <i class="fa-solid fa-microphone-lines"></i>
             <span class="points">5 pkt</span>
         </button>
       </div>
