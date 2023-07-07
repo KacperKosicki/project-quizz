@@ -78,7 +78,7 @@ function incrementPoints(teamName) {
 }
 
 function decrementPoints(teamName) {
-  if (teamPoints.hasOwnProperty(teamName) && teamPoints[teamName] > 0) {
+  if (teamPoints.hasOwnProperty(teamName) && teamPoints[teamName] >= -1000) {
     teamPoints[teamName]--;
     updatePoints();
   }

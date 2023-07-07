@@ -1,3 +1,21 @@
+/* VARIABELS */
+
+$font-teko: 'Teko', sans-serif;
+$font-josefin-sans: 'Josefin Sans', sans-serif;
+$font-open-sans: 'Open Sans', sans-serif;
+$font-caprasimo: 'Caprasimo', cursive;
+
+/* COLORS */
+
+$color-black: black;
+$color-white: white;
+
+$color-easy: green;
+$color-basic: yellow;
+$color-moderate: gold;
+$color-advanced: lightcoral;
+$color-expert: red;
+
 /* MAIN */
 
 .body::before {
@@ -63,10 +81,7 @@ body {
   position: relative;
   font-size: 35px;
   margin-bottom: 0;
-  //font-family: 'Teko', sans-serif;
   font-family: 'Josefin Sans', sans-serif;
-  //font-family: 'Open Sans', sans-serif;
-  //font-family: 'Caprasimo', cursive;
 }
 
 .category {
@@ -128,23 +143,23 @@ body {
 /* COLORS BUTTONS */
 
 .easy {
-  background-color: green;
+  background-color: $color-easy;
 }
   
 .basic {
-  background-color: yellow;
+  background-color: $color-basic;
 }
   
 .moderate {
-  background-color: gold;
+  background-color: $color-moderate;
 }
   
 .advanced {
-  background-color: lightcoral;
+  background-color: $color-advanced;
 }
   
 .expert {
-  background-color: red;
+  background-color: $color-expert;
 }
 
 /* POINTS */
