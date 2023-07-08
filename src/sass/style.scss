@@ -11,10 +11,8 @@ $color-black: black;
 $color-white: white;
 
 $color-easy: green;
-$color-basic: yellow;
-$color-moderate: gold;
-$color-advanced: lightcoral;
-$color-expert: red;
+$color-basic: gold;
+$color-moderate: red;
 
 /* MAIN */
 
@@ -77,6 +75,14 @@ body {
 /* CATEGORY */
 
 .films {
+  text-align: center;
+  position: relative;
+  font-size: 35px;
+  margin-bottom: 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.actors {
   text-align: center;
   position: relative;
   font-size: 35px;
@@ -153,14 +159,6 @@ body {
 .moderate {
   background-color: $color-moderate;
 }
-  
-.advanced {
-  background-color: $color-advanced;
-}
-  
-.expert {
-  background-color: $color-expert;
-}
 
 /* POINTS */
 
@@ -214,6 +212,19 @@ body {
   padding: 10px;
 }
 
+.team-icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.team-icons i {
+  font-size: 25px;
+  margin: 0 3px;
+  color: green;
+  padding: 3px;
+}
+
 /* GAMES RULES */
 
 .game-rules {
@@ -262,4 +273,37 @@ body {
 .challenge-box.completed {
   background-color: red;
   cursor: not-allowed;
+}
+
+.action-display1 {
+  text-align: center;
+}
+
+.action-display2 {
+  text-align: center;
+}
+
+.action-display1 h4 {
+  text-align: center;
+  margin-top: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 50px;
+  border-radius: 10px;
+  border: 3px solid #000;
+  color: $color-white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: $color-black;
+}
+
+.action-display2 h4 {
+  text-align: center;
+  margin-top: 40px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 50px;
+  border-radius: 10px;
+  border: 3px solid #000;
+  color: $color-white;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
